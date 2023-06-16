@@ -16,7 +16,7 @@ namespace DataLayer
             {
                 for (int i = 0; i < item.Reservations.Count; i++)
                 {
-                    RoomReservation reservationFromDb = dbContext.RoomReservations.Find(item.Reservations[i]);
+                    RoomReservation reservationFromDb = dbContext.RoomReservations.Find(item.Reservations[i].RoomReservationId);
                     if(reservationFromDb != null)
                     {
                         item.Reservations[i] = reservationFromDb;
@@ -29,7 +29,7 @@ namespace DataLayer
 
                 for (int i = 0; i < item.RestaurantOrders.Count; i++)
                 {
-                    RestaurantOrder orderFromDb = dbContext.RestaurantOrders.Find(item.RestaurantOrders[i]);
+                    RestaurantOrder orderFromDb = dbContext.RestaurantOrders.Find(item.RestaurantOrders[i].RestaurantOrderId);
                     if (orderFromDb != null)
                     {
                         item.RestaurantOrders[i] = orderFromDb;
@@ -42,7 +42,7 @@ namespace DataLayer
 
                 for (int i = 0; i < item.SpaSessions.Count; i++)
                 {
-                    SpaSession sessionFromDb = dbContext.SpaSessions.Find(item.SpaSessions[i]);
+                    SpaSession sessionFromDb = dbContext.SpaSessions.Find(item.SpaSessions[i].SpaSessionId);
                     if (sessionFromDb != null)
                     {
                         item.SpaSessions[i] = sessionFromDb;
@@ -55,7 +55,7 @@ namespace DataLayer
 
                 for (int i = 0; i < item.BarOrders.Count; i++)
                 {
-                    BarOrder orderFromDb = dbContext.BarOrders.Find(item.BarOrders[i]);
+                    BarOrder orderFromDb = dbContext.BarOrders.Find(item.BarOrders[i].BarOrderId);
                     if (orderFromDb != null)
                     {
                         item.BarOrders[i] = orderFromDb;
@@ -82,6 +82,7 @@ namespace DataLayer
                 if(clientFromDb != null)
                 {
                     dbContext.Clients.Remove(clientFromDb);
+                    dbContext.SaveChanges();
                 }
             }
             catch (Exception)
@@ -126,6 +127,7 @@ namespace DataLayer
                     clientFromDb.BarOrders = item.BarOrders;
                     clientFromDb.Reservations = item.Reservations;
                     clientFromDb.SpaSessions = item.SpaSessions;
+                    dbContext.SaveChanges();
                 }
             }
             catch (Exception)

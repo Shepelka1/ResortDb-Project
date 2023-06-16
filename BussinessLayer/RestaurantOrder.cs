@@ -13,17 +13,17 @@ namespace BussinessLayer
         public int RestaurantOrderId { get; set; }
         public DateTime OrderDate { get; set; }
         [Range(0, int.MaxValue)]
-        public decimal TatalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
         public List<Client> Clients { get; set; }
         private RestaurantOrder()
         {
             Clients = new List<Client>();
         }
-        public RestaurantOrder(int restaurantOrderId, DateTime orderDate, decimal tatalPrice) : this()
+        public RestaurantOrder(int restaurantOrderId, DateTime orderDate, decimal totalPrice) : this()
         {
             RestaurantOrderId = restaurantOrderId;
             OrderDate = orderDate;
-            TatalPrice = tatalPrice;
+            TotalPrice = totalPrice;
         }
     }
 }
