@@ -10,10 +10,7 @@ namespace DataLayer
 {
     public class ResortDbContext : DbContext
     {
-        public ResortDbContext() : base()
-        {
-        }
-        public ResortDbContext(string nameOrConnectionString) : base(nameOrConnectionString)
+        public ResortDbContext() : base("localhost\\SQLEXPRESS")
         {
         }
         public DbSet<Client> Clients { get; set; }

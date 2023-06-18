@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    internal class SpaSessionDbContext : IDb<SpaSession, int>
+    public class SpaSessionDbContext : IDb<SpaSession, int>
     {
         ResortDbContext dbContext = new ResortDbContext();
         public void Create(SpaSession item)

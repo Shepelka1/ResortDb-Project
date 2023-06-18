@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    internal class ClientDbContext : IDb<Client, int>
+    public class ClientDbContext : IDb<Client, int>
     {
         ResortDbContext dbContext = new ResortDbContext();
         public void Create(Client item)
@@ -122,6 +122,7 @@ namespace DataLayer
                 Client clientFromDb = dbContext.Clients.Find(item.ClientId);
                 if(clientFromDb != null)
                 {
+                    clientFromDb.Name = item.Name;
                     clientFromDb.PhoneNumber = item.PhoneNumber;
                     clientFromDb.RestaurantOrders = item.RestaurantOrders;
                     clientFromDb.BarOrders = item.BarOrders;

@@ -25,5 +25,10 @@ namespace BussinessLayer
             OrderDate = orderDate;
             TotalPrice = totalPrice;
         }
+        public BarOrder(DateTime orderDate, decimal totalPrice) : this()
+        {
+            OrderDate = orderDate;
+            TotalPrice = totalPrice;
+        }
     }
 }
