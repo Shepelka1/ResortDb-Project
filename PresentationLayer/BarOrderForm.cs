@@ -93,5 +93,19 @@ namespace PresentationLayer
                 throw;
             }
         }
+
+        private void BarGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BarOrderForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'resortDbNewDataSet1.Clients' table. You can move, or remove it, as needed.
+            this.clientsTableAdapter.Fill(this.resortDbNewDataSet1.Clients);
+            // TODO: This line of code loads data into the 'resortDbNewDataSet.BarOrders' table. You can move, or remove it, as needed.
+            this.barOrdersTableAdapter.Fill(this.resortDbNewDataSet.BarOrders);
+
+        }
     }
 }

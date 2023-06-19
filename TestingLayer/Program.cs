@@ -1,14 +1,23 @@
 ﻿using BussinessLayer;
 using DataLayer;
-internal class Program
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TestingLayer
 {
-    private static void Main(string[] args)
+    internal class Program
     {
-        Client client = new Client();
-        client.Name = "Gosho";
-        client.PhoneNumber = "0891234124";
-        ClientDbContext clientDbContext = new ClientDbContext();
-        clientDbContext.Create(client);
-        Console.WriteLine("Success");
+        static void Main(string[] args)
+        {
+            Client client = new Client();
+            client.Name = "Pesho";
+            client.PhoneNumber = "089234567890";
+            ClientDbContext clientDbContext = new ClientDbContext();
+            clientDbContext.Create(client);
+            Console.WriteLine("Success");
+        }
     }
 }

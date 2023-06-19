@@ -54,9 +54,9 @@
     <Compile Include="BarOrderDbContext.cs" />
     <Compile Include="ClientDbContext.cs" />
     <Compile Include="IDb.cs" />
-    <Compile Include="Migrations\202306181700142_ResortDbMigration.cs" />
-    <Compile Include="Migrations\202306181700142_ResortDbMigration.designer.cs">
-      <DependentUpon>202306181700142_ResortDbMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202306190532142_RootDb.cs" />
+    <Compile Include="Migrations\202306190532142_RootDb.designer.cs">
+      <DependentUpon>202306190532142_RootDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ResortDbContext.cs" />
@@ -66,18 +66,18 @@
     <Compile Include="SpaSessionDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BussinessLayer\BussinessLayer.csproj">
       <Project>{F1409D8D-A14F-4D48-8054-E5C07D166A59}</Project>
       <Name>BussinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202306181700142_ResortDbMigration.resx">
-      <DependentUpon>202306181700142_ResortDbMigration.cs</DependentUpon>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202306190532142_RootDb.resx">
+      <DependentUpon>202306190532142_RootDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

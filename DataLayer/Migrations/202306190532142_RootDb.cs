@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ResortDbMigration : DbMigration
+    public partial class RootDb : DbMigration
     {
         public override void Up()
         {
@@ -22,6 +22,7 @@
                 c => new
                     {
                         ClientId = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
                         PhoneNumber = c.String(),
                     })
                 .PrimaryKey(t => t.ClientId);
