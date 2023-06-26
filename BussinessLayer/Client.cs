@@ -24,9 +24,9 @@ namespace BussinessLayer
             SpaSessions = new List<SpaSession>();
             BarOrders = new List<BarOrder>();
         }
-        public Client(int clientId, string phoneNumber) : this()
+        public Client(string name, string phoneNumber) : this()
         {
-            ClientId = clientId;
+            Name = Name;
             PhoneNumber = phoneNumber;
         }
 

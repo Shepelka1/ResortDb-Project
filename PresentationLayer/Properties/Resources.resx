@@ -121,13 +121,31 @@
   <data name="2-big-beach-makena-beach-getty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2-big-beach-makena-beach-getty.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="photo-1572116469696-31de0f17cc34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1572116469696-31de0f17cc34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="waimea-bay-besthawaii0216-d7dbfa8a4c7f441aa89fb51d52cc97e5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\waimea-bay-besthawaii0216-d7dbfa8a4c7f441aa89fb51d52cc97e5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unsplash-image-dkGWbAq0yAw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unsplash-image-dkGWbAq0yAw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="photo-1572116469696-31de0f17cc34" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1572116469696-31de0f17cc34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Client" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Client.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HotelRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HotelRoom.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProperRoomInnit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProperRoomInnit.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restaurant.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Room.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spa.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

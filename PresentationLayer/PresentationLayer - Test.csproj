@@ -189,6 +189,24 @@
   <ItemGroup>
     <None Include="Resources\photo-1572116469696-31de0f17cc34.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HotelRoom.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProperRoomInnit.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spa.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -41,26 +41,26 @@ namespace PresentationLayer
             this.Delete_Btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resortDbNewDataSet1 = new PresentationLayer.ResortDbNewDataSet1();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.BarGridView = new System.Windows.Forms.DataGridView();
-            this.ResultLabel = new System.Windows.Forms.Label();
-            this.resortDbNewDataSet = new PresentationLayer.ResortDbNewDataSet();
-            this.barOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.barOrdersTableAdapter = new PresentationLayer.ResortDbNewDataSetTableAdapters.BarOrdersTableAdapter();
             this.barOrderIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.resortDbNewDataSet1 = new PresentationLayer.ResortDbNewDataSet1();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.barOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resortDbNewDataSet = new PresentationLayer.ResortDbNewDataSet();
+            this.ResultLabel = new System.Windows.Forms.Label();
+            this.barOrdersTableAdapter = new PresentationLayer.ResortDbNewDataSetTableAdapters.BarOrdersTableAdapter();
             this.clientsTableAdapter = new PresentationLayer.ResortDbNewDataSet1TableAdapters.ClientsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barOrdersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -170,6 +170,16 @@ namespace PresentationLayer
             this.comboBox1.Size = new System.Drawing.Size(327, 28);
             this.comboBox1.TabIndex = 10;
             // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.resortDbNewDataSet1;
+            // 
+            // resortDbNewDataSet1
+            // 
+            this.resortDbNewDataSet1.DataSetName = "ResortDbNewDataSet1";
+            this.resortDbNewDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // clientBindingSource
             // 
             this.clientBindingSource.DataSource = typeof(BussinessLayer.Client);
@@ -193,31 +203,6 @@ namespace PresentationLayer
             this.BarGridView.TabIndex = 11;
             this.BarGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BarGridView_CellContentClick);
             // 
-            // ResultLabel
-            // 
-            this.ResultLabel.BackColor = System.Drawing.Color.Black;
-            this.ResultLabel.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultLabel.ForeColor = System.Drawing.Color.White;
-            this.ResultLabel.Location = new System.Drawing.Point(595, 316);
-            this.ResultLabel.Name = "ResultLabel";
-            this.ResultLabel.Size = new System.Drawing.Size(110, 65);
-            this.ResultLabel.TabIndex = 12;
-            this.ResultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // resortDbNewDataSet
-            // 
-            this.resortDbNewDataSet.DataSetName = "ResortDbNewDataSet";
-            this.resortDbNewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // barOrdersBindingSource
-            // 
-            this.barOrdersBindingSource.DataMember = "BarOrders";
-            this.barOrdersBindingSource.DataSource = this.resortDbNewDataSet;
-            // 
-            // barOrdersTableAdapter
-            // 
-            this.barOrdersTableAdapter.ClearBeforeFill = true;
-            // 
             // barOrderIdDataGridViewTextBoxColumn
             // 
             this.barOrderIdDataGridViewTextBoxColumn.DataPropertyName = "BarOrderId";
@@ -237,15 +222,30 @@ namespace PresentationLayer
             this.totalPriceDataGridViewTextBoxColumn.HeaderText = "TotalPrice";
             this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
             // 
-            // resortDbNewDataSet1
+            // barOrdersBindingSource
             // 
-            this.resortDbNewDataSet1.DataSetName = "ResortDbNewDataSet1";
-            this.resortDbNewDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.barOrdersBindingSource.DataMember = "BarOrders";
+            this.barOrdersBindingSource.DataSource = this.resortDbNewDataSet;
             // 
-            // clientsBindingSource
+            // resortDbNewDataSet
             // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.resortDbNewDataSet1;
+            this.resortDbNewDataSet.DataSetName = "ResortDbNewDataSet";
+            this.resortDbNewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ResultLabel
+            // 
+            this.ResultLabel.BackColor = System.Drawing.Color.Black;
+            this.ResultLabel.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResultLabel.ForeColor = System.Drawing.Color.White;
+            this.ResultLabel.Location = new System.Drawing.Point(595, 316);
+            this.ResultLabel.Name = "ResultLabel";
+            this.ResultLabel.Size = new System.Drawing.Size(110, 65);
+            this.ResultLabel.TabIndex = 12;
+            this.ResultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // barOrdersTableAdapter
+            // 
+            this.barOrdersTableAdapter.ClearBeforeFill = true;
             // 
             // clientsTableAdapter
             // 
@@ -274,13 +274,13 @@ namespace PresentationLayer
             this.Name = "BarOrderForm";
             this.Text = "Resort Manager 2000 - Bar";
             this.Load += new System.EventHandler(this.BarOrderForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barOrdersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resortDbNewDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
